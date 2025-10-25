@@ -1,0 +1,36 @@
+@import "tailwindcss";
+:root {
+  --text-main-c: #5f6362;
+  --text-second-c: white;
+  --text-third-c: #C4C4C4;
+  --button-main-bg: #323232;
+  --button-main-bo: #7C7C7C;
+  --font-w:'Slackside One'; 
+  --button-second-bg: #366b5b;
+  --button-hover-bg: #2e574a;
+  --bg-card: #131414;
+}
+.font-w {
+  font-family: 'Slackside One', serif
+}
+@layer {
+  .btn {
+    @apply h-[45px] w-[120px] bg-[var(--button-main-bg)] hover:bg-white hover:shadow-xl text-white hover:text-black rounded-xl cursor-pointer font-bold 
+  }  
+  .btnM {
+    @apply text-[var(--text-third-c)] px-[18px] py-[9px] text-[min(3.5vw,25px)] rounded-xl hover:shadow-xl hover:text-white font-serif hover:bg-[var(--button-hover-bg)]
+  }  
+  .btnMActive {
+    @apply text-white px-[18px] py-[9px]  text-[min(4vw,28px)] rounded-xl hover:shadow-xl bg-[var(--button-second-bg)] font-serif
+  }
+  .btnCli {
+    @apply  rounded-full size-[10px] cursor-pointer
+  }
+  .svgg {
+    @apply fill-[var(--text-third-c)] hover:fill-[var(--button-second-bg)] cursor-pointer md:size-[min(2.5vw,30px)]
+  }
+}
+body {
+  background-color: black;
+  margin: 0 15px;
+}
