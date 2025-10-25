@@ -133,11 +133,10 @@ function Menu() {
                 alt="" 
                 className='h-[min(22vw,160px)] md:h-[min(14vw,160px)] block transition-all'
                 smooth={true}
-                initial={{opacity:0}}
-                animate={{opacity:1}}
-                exit={{opacity:0}}
-                transition={{duration:1
-                }}/>
+                // initial={{opacity:0}}
+                // animate={{opacity:1}}
+                // exit={{opacity:0}}
+                />
                 <div className='max-w-[360px] flex flex-col sm:gap-[25px] gap-[15px] justify-center'>
                   <div className='flex justify-between'>
                     <h4 className='text-white text-[min(4.2vw,24px)] md:text-[min(2.2vw,26px)]'>{prodc.title}</h4>
