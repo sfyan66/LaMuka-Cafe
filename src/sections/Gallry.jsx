@@ -14,12 +14,12 @@ const  Gallry = () => {
     {id:1 ,img:ga01}, {id:2 ,img:ga02}, {id:3 ,img:ga03}, {id:4 ,img:ga04}, {id:5 ,img:ga05}, {id:6 ,img:ga06}, {id:7 ,img:ga07}, {id:8 ,img:ga08}
   ]
   return (
-    <Element name="Gallry" className='m-auto md:max-w-7xl max-w-5xl py-[90px]'>
+    <Element name="Gallry" className='m-auto md:max-w-7xl max-w-5xl py-[60px] md:py-[90px]'>
       <h1 className='text-[13vw] md:text-[min(6.5vw,90px)] text-white text-center pb-[50px]'>Gallery</h1>
-      <div className='grid grid-cols-2 md:grid-cols-4'>
+      <div className='grid grid-cols-2 md:grid-cols-4 gap-0'>
         {gallery.map((imgage) => {
           return (
-          <div key={imgage.id} className='overflow-hidden relative h-[40vh]'>
+          <div key={imgage.id} className='overflow-hidden relative'>
             <img src={imgage.img} alt="" className="w-[120%] transition-transform duration-500 ease-in-out hover:opacity-[.5] hover:scale-110 opacity-[.7] hover:rotate-2"/>
           </div>
           )

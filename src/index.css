@@ -27,7 +27,7 @@
     @apply  rounded-full size-[10px] cursor-pointer
   }
   .svgg {
-    @apply fill-[var(--text-third-c)] hover:fill-[var(--button-second-bg)] cursor-pointer md:size-[min(2.5vw,30px)]
+    @apply fill-[var(--text-third-c)] hover:fill-[var(--button-second-bg)] cursor-pointer md:size-[min(2.5vw,30px)] size-[min(6.5vw,30px)]
   }
 }
 body {

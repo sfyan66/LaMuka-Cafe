@@ -34,7 +34,7 @@ const Subscribe = () => {
     <div className='flex justify-center items-center pb-[100px] after:content[" "] after:bg-[var(--bg-card)] after:w-full after:h-[2px] after:absolute md:max-w-7xl max-w-5xl mx-auto after:md:max-w-7xl after:max-w-5xl'>
       <div className='relative bg-slate-100/5 shadow-[0_0_5px_rgba(255,255,255,0.20)] backdrop-blur-xl rounded-xl max-w-[460px] flex-1 md:max-w-[min(75vw,650px)] flex flex-col items-center py-[48px] px-[64px] gap-[48px] z-10'>
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900 to-gray-800 blur-3xl opacity-40 overflow-hidden"></div>
-        <p className='text-[var(--text-third-c)] text-[17px] sm:text-[21px] text-center'>
+        <p className='text-white text-[17px] sm:text-[21px] text-center opacity-100'>
           Subscribe to our mailing list for<br/>updates, news, and exclusive offers.
         </p>
         <form className='flex gap-[16px] w-full relative flex-col md:flex-row' onSubmit={handleSubmit}>

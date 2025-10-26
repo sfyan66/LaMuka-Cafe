@@ -4,7 +4,7 @@ import { Element } from 'react-scroll'
 
 function About() {
   return (
-    <Element name="About" className='my-[120px] h-[100vh]'>
+    <Element name="About" className='my-[120px]'>
       <h1 className='text-[15vw] md:text-[min(6vw,90px)] text-white text-center pb-[70px]'>Our Story</h1>
       <div className='md:max-w-7xl max-w-5xl mx-auto md:flex gap-[60px] w-[85vw]'>
         <img src={aboutImg} alt="" className='md:h-[60vh] w-auto'/>

@@ -48,8 +48,8 @@ const Footer = () => {
   return (
     <footer className='mx-auto md:max-w-7xl max-w-5xl py-[48px]'>
       <div className='flex flex-col md:flex-row justify-between '>
-        <div>
-          <h2 className='text-white font-serif text-[5vw] md:text-[min(3.5vw,45px)]'>LaMuka.</h2>
+        <div className='pb-[40px] md:pb-0'>
+          <h2 className='text-white font-serif text-[min(10vw,48px)] md:text-[min(3.5vw,45px)]'>LaMuka.</h2>
           <Svgs/>
         </div>
         <div className='flex flex-col md:flex-row justify-between w-[70%]'>
