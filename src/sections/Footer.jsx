@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 
 const Svgs = () => {
   return (
@@ -22,12 +21,6 @@ const Svgs = () => {
   )
 }
 const Footer = () => {
-  const backTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })    
-  }
   const infos = [
     {
       title: 'Location'
@@ -48,13 +41,13 @@ const Footer = () => {
   return (
     <footer className='mx-auto md:max-w-7xl max-w-5xl py-[48px]'>
       <div className='flex flex-col md:flex-row justify-between '>
-        <div className='pb-[40px] md:pb-0'>
+        <div className='pb-[50px] md:pb-0'>
           <h2 className='text-white font-serif text-[min(10vw,48px)] md:text-[min(3.5vw,45px)]'>LaMuka.</h2>
           <Svgs/>
         </div>
-        <div className='flex flex-col md:flex-row justify-between w-[70%]'>
+        <div className='flex flex-col md:flex-row gap-[40px] justify-between w-[70%]'>
           {infos.map((info) => (
-            <div>
+            <div key={info.title}>
               <h3 
               className='text-[var(--button-second-bg)] md:text-[min(2.1vw,26px)] pb-[15px] font-bold'>
                 {info.title}
@@ -72,7 +65,7 @@ const Footer = () => {
             LaMuka 2026  <span className='opacity-30'>l</span>  Developed  by 
             <a href="" className='text-white hover:text-[var(--button-second-bg)] cursor-pointer  opacity-80 md:text-[min(2.3vw,22px)] text-[min(3.5vw,20px)]'></a>
           </div>
-          <Link 
+          <Link
           to="Intro"
           smooth={true}
           duration={2000}

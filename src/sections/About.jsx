@@ -1,4 +1,3 @@
-import React from 'react'
 import aboutImg from '../assets/about-pic-primary.jpg'
 import { Element } from 'react-scroll'
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import {useState, useEffect} from 'react';
 import user01 from '.././assets/avatars/user-01.jpg'
 import user02 from '.././assets/avatars/user-02.jpg'

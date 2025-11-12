@@ -1,4 +1,3 @@
-import React from 'react'
 import ga01 from '../assets/gallery-01.jpg'
 import ga02 from '../assets/gallery-02.jpg'
 import ga03 from '../assets/gallery-03.jpg'
