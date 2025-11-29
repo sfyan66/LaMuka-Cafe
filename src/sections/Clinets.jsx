@@ -44,7 +44,7 @@ const Clinets = () => {
 
   const [clients, setClients] = useState(client.slice(0, 3));
   const [size, setSize] = useState(false);
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState(0);
   useEffect(() => {
     const getWidth = () => {
       if (window.innerWidth > 768) {
