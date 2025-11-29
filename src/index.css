@@ -1,36 +1,40 @@
 @import "tailwindcss";
+
 :root {
   --text-main-c: #5f6362;
   --text-second-c: white;
-  --text-third-c: #C4C4C4;
+  --text-third-c: #c4c4c4;
   --button-main-bg: #323232;
-  --button-main-bo: #7C7C7C;
-  --font-w:'Slackside One'; 
+  --button-main-bo: #7c7c7c;
+  --font-w: "Slackside One";
   --button-second-bg: #366b5b;
   --button-hover-bg: #2e574a;
   --bg-card: #131414;
 }
 .font-w {
-  font-family: 'Slackside One', serif
+  font-family: "Slackside One", serif;
 }
 @layer {
   .btn {
-    @apply h-[45px] w-[120px] bg-[var(--button-main-bg)] hover:bg-white hover:shadow-xl text-white hover:text-black rounded-xl cursor-pointer font-bold 
-  }  
+    @apply h-11 w-30 bg-[var(--button-main-bg)] hover:bg-white hover:shadow-xl text-white hover:text-black rounded-xl cursor-pointer font-bold;
+  }
+  .btnmd {
+    @apply h-12 w-full bg-white hover:shadow-xl text-black rounded-lg hover:scale-99 cursor-pointer font-bold;
+  }
   .btnM {
-    @apply text-[var(--text-third-c)] px-[18px] py-[9px] text-[min(3.5vw,25px)] rounded-xl hover:shadow-xl hover:text-white font-serif hover:bg-[var(--button-hover-bg)]
-  }  
+    @apply text-[var(--text-third-c)] px-[18px] py-[9px] text-[min(3.5vw,25px)] rounded-xl hover:shadow-xl hover:text-white font-serif hover:bg-[var(--button-hover-bg)];
+  }
   .btnMActive {
-    @apply text-white px-[18px] py-[9px]  text-[min(4vw,28px)] rounded-xl hover:shadow-xl bg-[var(--button-second-bg)] font-serif
+    @apply text-white px-[18px] py-[9px]  text-[min(4vw,28px)] rounded-xl hover:shadow-xl bg-[var(--button-second-bg)] font-serif;
   }
   .btnCli {
-    @apply  rounded-full size-[10px] cursor-pointer
+    @apply rounded-full size-[10px] cursor-pointer;
   }
   .svgg {
-    @apply fill-[var(--text-third-c)] hover:fill-[var(--button-second-bg)] cursor-pointer md:size-[min(2.5vw,30px)] size-[min(6.5vw,30px)]
+    @apply fill-[var(--text-third-c)] hover:fill-[var(--button-second-bg)] cursor-pointer md:size-[min(2.5vw,30px)] size-[min(6.5vw,30px)];
   }
 }
 body {
   background-color: black;
-  margin: 0 15px;
+  padding: 0 16px;
 }
